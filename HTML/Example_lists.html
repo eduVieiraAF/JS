@@ -1,0 +1,80 @@
+<!--* HTML Lists
+    → Unordered lists <ul></ul>
+    → Ordered lists <ol></ol>
+    → Description lists <dl></dl>
+    *Bonus* nested lists
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <link rel="icon" type="image/x-icon" href="html5.png">
+</head>
+<body>
+    
+    <h2>Shopping cart → unordered list</h2>
+    <ul style="list-style-type:circle;">
+        <li>bread dough</li>
+        <li>tomato sauce</li>
+        <li>cheese</li>
+        <li>bell-pepper</li>
+    </ul>
+
+    <hr>
+
+    <h2>TO-DO list → ordered list</h2>
+    <ol type="i" start="5"> <!-- Changes the type of bullets -->
+        <li>Make coffee</li>
+        <li>Turn on PC</li>
+        <li>Open VS Code</li>
+        <li>Code</li>
+    </ol>
+
+    <hr>
+
+    <h2>Dev Languages → Description list</h2>
+    <dl>
+        <dt>Java</dt>
+        <dd>. First language I developed since I've been back</dd>
+        <br>
+        <dt>Kotlin</dt>
+        <dd>. Language I've coded the most with</dd>
+        <br>
+        <dt>Python</dt>
+        <dd>. Language I study for fun and future automation projects</dd>
+        <br>
+        <dt>Flutter</dt>
+        <dd>. Added this one so as to broaden my possibilities to land a job</dd>
+        <br>
+        <dt>JavaScript + CSS + HTML</dt>
+        <dd>. Learning it right for a position in the tech division for ERPServ</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Shopping cart → nested list</h2>
+    <ul style="list-style-type:circle;">
+        <li>bread dough</li>
+        <li>tomato sauce</li>
+        <li>cheese
+            <ul style="list-style-type:square;">
+                <li>blue</li>
+                <li>brie</li>
+                <li>jarlsberg</li>
+            </ul>
+        </li>
+        <li>bell-pepper
+            <ul style="list-style-type:square;">
+                <li>green</li>
+                <li>red</li>
+                <li>yellow</li>
+            </ul>
+        </li>
+    </ul>
+
+    </body>
+    </html>
