@@ -1,0 +1,46 @@
+<!--
+    * CSS stands for Cascading Style Sheet
+    
+    - Inline - by using the style attribute inside HTML elements
+    - Internal - by using a <style> element in the <head> section
+    - External - by using a <link> element to link to an external CSS file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="Example_CSS.css"> <!--* External -->
+</head>
+
+<!--* Internal CSS -->
+<style>
+    body {background-color: lightblue;}
+    h2   {color: rgb(134, 49, 18);}
+</style>
+<!-- EndRegion -->
+
+<body>
+    <!--* INLINE -->
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:rgb(207, 5, 5);"><b>A red paragraph.</b></p>
+    <!-- EndRegion -->
+    
+    <hr>
+    
+    <!--* Applying Internal CSS -->
+    <h2>Painted Heading with CSS<br>and Background too!</h2>
+    <!-- EndRegion -->
+
+    <hr>
+
+    <!--* Applying external CSS file -->
+    <h3>Heading affected by external CSS file</h3>
+    <h4>Another Heading affected by external CSS file</h4>
+    <!-- EndRegion -->
+
+</body>
+</html>

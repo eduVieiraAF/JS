@@ -1,0 +1,21 @@
+body {
+    background-color: powderblue;
+  }
+  
+  h3 {
+    color: darkslateblue;
+    font-family: verdana;
+    margin: 50px;
+  }
+  
+  h4 {
+    color: deeppink;
+    font-size: 140%;
+  }
+
+  p {
+    font-family: courier;
+    font-size: 120%;
+    border: 2px solid teal;
+    padding: 30px;
+  }
