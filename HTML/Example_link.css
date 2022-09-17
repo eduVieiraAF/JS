@@ -1,0 +1,45 @@
+
+body {
+    background-color: powderblue;
+  }
+
+  a:link {
+    color: indigo;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: crimson;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: maroon;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: seagreen;
+    text-decoration: underline;
+  }
+
+  h1 {
+    color: midnightblue;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid darkslategrey
+  }
+
+  h2 {
+    color: darkslateblue;
+    font-family: verdana;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid teal;
+  }
+
+  p {
+    color: darkslategrey;
+    font-family: cursive;
+    padding: 5px;
+  }
