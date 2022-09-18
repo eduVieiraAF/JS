@@ -10,9 +10,10 @@
     <style>
         button {
             background-color: darkslategrey;
-            font-size: 12pt;
+            border-radius: 10%;
+            font-size: 18pt;
             font-family: monospace;
-            padding: 20px;
+            padding: 10px;
             color: whitesmoke;
         }
     </style>
@@ -23,13 +24,13 @@
     <p id="clicked">JS can change HTML content!</p>
 
     <button type="button" autofocus onclick="document.getElementById('clicked').innerHTML = 'Hello, World of JS.'">
-        Click me
+        <i>Click<br>me</i>
     </button>
 
     <hr>
 
     <button onclick="alert('I said don\'t click it!!!')" style="background-color: indianred;">
-        <b>Don't click it</b>
+        <b>Don't<br>click it</b>
     </button>
 </body>
 
