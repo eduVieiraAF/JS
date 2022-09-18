@@ -1,0 +1,16 @@
+html {
+    /*background: linear-gradient(white, teal);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    Combining the properties above will create a gradient effect on the entire page*/
+
+    background-image: url("https://wallpaper.dog/large/5538102.jpg");
+    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
