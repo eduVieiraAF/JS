@@ -6,9 +6,17 @@ p {
     text-decoration: underline wavy khaki;
     color: darkslategray;
     margin-left: 1em;
+    margin-right: 1em;
     text-align: justify;
+    border-style: dashed;
+    border-radius: 10%;
+    border-color: darkslateblue;
+    padding: 10px;
 }
 
 h2 {
     font-family: Bungee Spice; /*Name of the font from Google fonts*/
+    border-style: outset;
+    border-width: 10px;
+    padding: 10px;
 }
