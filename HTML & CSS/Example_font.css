@@ -9,7 +9,7 @@ p {
     margin-right: 1em;
     text-align: justify;
     border-style: dashed;
-    border-radius: 10%;
+    border-radius: 30px;
     border-color: darkslateblue;
     padding: 10px;
 }
@@ -17,6 +17,7 @@ p {
 h2 {
     font-family: Bungee Spice; /*Name of the font from Google fonts*/
     border-style: outset;
-    border-width: 10px;
-    padding: 10px;
+    border-width: 15px;
+    padding: 5px;
+    border-radius: 5px;
 }
