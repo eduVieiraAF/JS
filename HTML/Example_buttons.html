@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,28 @@
     <link rel="icon" type="image/x-icon" href="html5.png">
     <style>
         button {
-            background-color: powderblue;
+            background-color: darkslategrey;
             font-size: 12pt;
             font-family: monospace;
-            padding: 8px;
-            color: royalblue;
+            padding: 20px;
+            color: whitesmoke;
         }
     </style>
 </head>
+
 <body>
     <h1 style="color: darkslategray;">What can JS do??</h1>
-
     <p id="clicked">JS can change HTML content!</p>
-    <button type="button"
-    autofocus
-    onclick="document.getElementById('clicked').innerHTML = 'Hello, World of JS.'">
+
+    <button type="button" autofocus onclick="document.getElementById('clicked').innerHTML = 'Hello, World of JS.'">
         Click me
     </button>
 
     <hr>
 
-    <button onclick="alert('I said don\'t click it')">
-        Don't click it
+    <button onclick="alert('I said don\'t click it!!!')" style="background-color: indianred;">
+        <b>Don't click it</b>
     </button>
 </body>
+
 </html>
