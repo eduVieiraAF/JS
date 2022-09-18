@@ -1,0 +1,14 @@
+p {
+    font-family: Architects Daughter; /*Name of the font from Google fonts*/
+    /*font-style: italic;*/
+    font-weight: bold;
+    font-size: 14pt;
+    text-decoration: underline wavy khaki;
+    color: darkslategray;
+    margin-left: 1em;
+    text-align: justify;
+}
+
+h2 {
+    font-family: Bungee Spice; /*Name of the font from Google fonts*/
+}
