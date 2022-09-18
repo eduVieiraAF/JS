@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buttons</title>
     <link rel="icon" type="image/x-icon" href="html5.png">
+    <style>
+        button {
+            background-color: powderblue;
+            font-size: 12pt;
+            font-family: monospace;
+            padding: 8px;
+            color: royalblue;
+        }
+    </style>
 </head>
 <body>
-    <hr>
     <h1 style="color: darkslategray;">What can JS do??</h1>
 
     <p id="clicked">JS can change HTML content!</p>
     <button type="button"
+    autofocus
     onclick="document.getElementById('clicked').innerHTML = 'Hello, World of JS.'">
         Click me
+    </button>
+
+    <hr>
+
+    <button onclick="alert('I said don\'t click it')">
+        Don't click it
     </button>
 </body>
 </html>
