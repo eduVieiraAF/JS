@@ -1,0 +1,46 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+a:link {
+    color: #146649;
+}
+
+a:visited {
+    color: coral;
+}
+
+button:hover {
+    background-color: black;
+    color: lightgreen;
+}
+
+button:active {
+    background-color: rgb(41, 43, 46);
+    color: bisque;
+}
+
+li:first-child {
+    background-color: blanchedalmond;
+}
+
+li:last-child {
+    background-color: thistle;
+}
+
+/* li:nth-child(5) {
+    background-color: powderblue;
+} */
+
+li:nth-child(even) {
+    background-color: powderblue;
+}
+
+li:nth-child(3n+0) {
+    /*
+    a = cycle size
+    n = counter (starts at 0)
+    b = offset value */
+    background-image: linear-gradient(to right, #c2b4a1, white);
+}
