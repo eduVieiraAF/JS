@@ -1,0 +1,85 @@
+p {
+    border: 4px dotted coral;
+    width: 150px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#p1 {
+    text-align: left;
+    font-family: monospace;
+}
+
+#p2 {
+    text-align: center;
+    font-family: monospace;
+}
+
+#p3 {
+    text-align: right;
+    font-family: monospace;
+}
+
+div {
+    border: 4px dotted coral;  
+    border-radius: 12px;
+    width: 400px;
+}
+
+img {
+    float: right;
+    margin: 5px;
+    width: 60px;
+    padding: 5px;
+}
+
+h3 {
+    text-align: justify;
+    padding: 5px;
+}
+
+#h1 {
+    font-family: monospace;
+    opacity: 60%;
+    text-shadow: 2px 2px 4px tomato;
+    padding: 4px;
+    position: fixed;
+    right: 0px;
+}
+
+#h2 {
+    font-family: monospace;
+    text-shadow: 0px 0px 5px burlywood, -2px -2px 5px indianred, -5px -5px 5px tomato;
+
+    position: relative;
+    right: -50px;
+}
+
+#h3 {
+    font-family: monospace;
+    text-shadow: -10px 0px 5px green, -2px -2px 5px indianred, -5px -5px 5px tomato;
+
+    position: sticky;
+    top: 0px
+}
+
+#box1 {
+    font-family: monospace;
+    position: relative;
+    background-color: azure;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed indianred;
+    padding: 10px;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box2 {
+    font-family: monospace;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+}
+
