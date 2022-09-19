@@ -3,9 +3,10 @@ div {
     width: 300px;
     border-radius: 20px;
     border: 10px dotted springgreen;
-    padding: 20px;
+    padding: 50px;
     margin: 50px;
-    color: darkorange;
+    color: brown;
+    text-align: justify;
     font-family: Architects Daughter;
 }
 
@@ -20,7 +21,7 @@ p {
     color: coral;
     font-weight: bold;
     font-family: Architects Daughter;
-    font-size: 16pt;
+    font-size: 14pt;
     text-align: justify;
     margin: 1em;
 }
