@@ -1,0 +1,23 @@
+div {
+    background-color: ivory;
+    width: 300px;
+    border: 10px dotted springgreen;
+    padding: 20px;
+    margin: 50px;
+    color: darkorange;
+    font-family: Architects Daughter;
+}
+
+h1 {
+    color: olivedrab;
+    text-align: center;
+    font-family: Architects Daughter;
+}
+
+p {
+    color: coral;
+    font-family: Architects Daughter;
+    font-size: 16pt;
+    text-align: justify;
+    margin: 1em;
+}
