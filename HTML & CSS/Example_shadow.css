@@ -1,0 +1,28 @@
+h1 {
+    border: 1px solid slateblue;
+    width: 200px;
+    text-align: center;
+    padding: 25px;
+    font-family: Times;
+    font-weight: bold;
+    text-shadow: 0px 0px 6px rgb(41, 228, 41), -5px -5px 6px slateblue, -10px -10px 6px indigo;
+    background-color: black;
+    /*
+    horizontal (px)
+    vertical (px)
+    blur (px)
+    color(
+    */
+    
+    box-shadow: 0px 0px 2px indigo, 4px 4px 4px darkgreen;
+    /*
+    horizontal (px)
+    vertical (px)
+    blur (px)
+    color(
+    */
+}
+
+html {
+    background-color: black;
+}
