@@ -1,0 +1,41 @@
+p {
+    width: 280px;
+    background-color: coral;
+    color: midnightblue;
+    font-size: 35pt;
+    text-align: center;
+    border: 3px dotted midnightblue;
+    font-family: monospace;
+    border-radius: 20pt;
+    margin: 0px;
+}
+
+#p1 {
+    text-shadow: 0px 0px 6px rgb(41, 228, 41), -2px -2px 6px slateblue, -6px -6px 6px indigo;
+}
+
+#p2 {
+    text-shadow: 0px 0px 6px rgb(41, 228, 41), 2px 2px 6px slateblue, -6px -6px 6px indigo;
+    transform: translateX(50px) 
+    /* transform: translateY(50px); */
+    /* transform: translate(50px, 50px); */
+    /* transform: rotateX(180deg); */
+    /* transform:  rotateY(180deg); */
+    /* transform: rotateZ(180deg); */
+
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(2,2); */
+
+    /* transform: skewX(45deg); */
+    /* transform: skewY(25deg); */
+    
+    /* transform: matrix(0.5, 1, 1, 1, 50, 50);
+    scaleX()
+    skewY()
+    skewX()
+    scaleY()
+    translateX()
+    translateY()
+    */
+}
