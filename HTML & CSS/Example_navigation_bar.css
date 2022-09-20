@@ -1,0 +1,47 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px dashed  steelblue;
+    color: steelblue;
+    width: 350px;
+    text-align: center;
+    border-radius: 80px;
+}
+
+ul {
+    font-family: monospace;
+    width: 416.5px;
+    font-size: 15px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: steelblue;
+    margin: 0px;
+    padding: 0px;
+    border: 2 solid whitesmoke;
+    border-radius: 50px;
+}
+
+li a {
+    float: left;
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-right: 3px solid white;
+    min-width: 70px;
+    border-radius: 50px;
+}
+
+li a:hover {
+    color: whitesmoke;
+    font-weight: bolder;
+    animation: glowAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glowAnim {
+    0% {text-shadow: 3px 1px 3px black;}
+    50% {text-shadow: 1px 1px 3px rgb(157, 197, 230); color: cornsilk;}
+    100% {text-shadow: 3px 1px 3px black;}
+}
