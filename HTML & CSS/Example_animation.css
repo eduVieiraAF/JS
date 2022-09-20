@@ -1,0 +1,55 @@
+#p1 {
+    width: 250px;
+    background: black;
+    color: aqua;
+    font-family: monospace;
+    font-size: 55pt;
+    text-align: center;
+    margin: 0px;
+
+    animation: myScaleAnimation, myColorAnimation, myTranslateAnimation, myOpacityAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myColorAnimation {
+    0% { background-color: black; }
+    20% { background-color: rebeccapurple; }
+    40% { background-color: midnightblue; }
+    60% { background-color: midnightblue; }
+    80% { background-color: violet; }
+    100% { background-color: rebeccapurple; }
+}
+
+@keyframes myRotateAnimation {
+    100% { transform: rotateZ(360deg); }
+    /* 100% { transform: rotateX(360deg); } */
+    /* 100% { transform: rotateY(360deg); } */
+}
+
+@keyframes myTranslateAnimation {
+     50% { transform: translate(100px, 0); }   
+}
+
+@keyframes myScaleAnimation {
+    50% { transform: scale(3,1); }
+    
+}
+
+@keyframes myOpacityAnimation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#p1:hover {
+    animation: onHover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes onHover {
+    0% { box-shadow: 0px 0px 5px greenyellow, 0px 0px 5px greenyellow, 0px 0px 5px greenyellow; }
+    50% {box-shadow: 0px 0px 5px palevioletred, 0px 0px 5px palevioletred, 0px 0px 5px palevioletred; }
+    100% {box-shadow: 0px 0px 5px tomato, 0px 0px 5px tomato, 0px 0px 5px tomato; }
+}
