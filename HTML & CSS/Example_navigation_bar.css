@@ -24,7 +24,8 @@ li a {
     float: left;
     padding: 10px 15px;
     display: block;
-    color: black;
+    font-weight: bold;
+    color: white;
     text-align: center;
     text-decoration: none;
     border-right: 3px solid white;
@@ -43,6 +44,6 @@ li a:hover {
 
 @keyframes glowAnim {
     0% {text-shadow: 3px 1px 3px black;}
-    50% {text-shadow: 1px 1px 3px rgb(157, 197, 230); color: cornsilk;}
+    50% {text-shadow: 0px px 3px rgb(157, 197, 230); color: steelblue;}
     100% {text-shadow: 3px 1px 3px black;}
 }
