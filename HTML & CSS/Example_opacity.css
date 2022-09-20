@@ -1,0 +1,40 @@
+html {
+    background-image: radial-gradient(indigo, black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: monospace
+}
+
+h1 {
+    background-image: linear-gradient(to right, black, rgb(39, 5, 63));
+    width: 440px;
+    text-align: center;
+    color: rgb(155, 87, 87);
+    border: 5px dashed rgb(155, 87, 87);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+img:hover {
+    opacity: 0.2;
+}
+
+div {
+    background: rgb(75, 0, 130);
+    padding: 10px;
+    color: aliceblue;
+  }
+  
+  div.first {
+    background:rgb(75, 0, 130, 0.1)
+  }
+  
+  div.second {
+    background: rgb(75, 0, 130, 0.3)
+  }
+  
+  div.third {
+    background: rgb(75, 0, 130, 0.6)
+  }
