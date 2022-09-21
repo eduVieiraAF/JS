@@ -1,0 +1,35 @@
+html {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+input {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: steelblue;
+    width: 40px;
+}
+
+#sideC {
+    color: darkred;
+    text-shadow: 1px 1px 2px orange;
+    margin-left: 20px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: darkred;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 8px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: firebrick;
+    font-weight: bolder;
+}
+
+button:active {
+    background-color: rgb(43, 3, 3);
+}
