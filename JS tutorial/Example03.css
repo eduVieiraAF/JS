@@ -1,0 +1,31 @@
+html {
+    font-family: monospace;
+}
+
+label {
+    text-align: justify;
+    font-weight: bold;
+    text-shadow: -1px 1px 4px #73372d;
+}
+
+input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: chocolate;
+}
+
+button {
+    background-color: #73372d;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+button:active{
+    background-color: 73372d;
+}
