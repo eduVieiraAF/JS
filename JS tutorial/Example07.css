@@ -8,12 +8,13 @@ input {
     padding-right: 10px;
     color: steelblue;
     width: 40px;
+    border-radius: 25pt;
+    border-width: 1px;
 }
 
 #sideC {
     color: darkred;
     text-shadow: 1px 1px 2px orange;
-    margin-left: 20px;
 }
 
 button {
@@ -23,7 +24,8 @@ button {
     color: whitesmoke;
     font-weight: bold;
     padding: 8px;
-    width: 150px;
+    width: 180px;
+    border-radius: 25pt;
 }
 
 button:hover {
