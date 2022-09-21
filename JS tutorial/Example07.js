@@ -10,6 +10,6 @@ document.getElementById("button").onclick = function() {
     b = Number(b)
 
     c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
-    console.log("Side C →", c)
-    document.getElementById("sideC").innerHTML = "Side C → " + c
+    console.log(`Side C → ${c}`)
+    document.getElementById("sideC").innerHTML = `Side C → ${c}.`
 }
