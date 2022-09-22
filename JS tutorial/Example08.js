@@ -20,6 +20,5 @@ document.getElementById("calArea").onclick = function() {
         window.alert(`The area is ${area}`)
     } else {
         window.alert(`Empty field`)
-        document.getElementById("baseValue").innerHTML = ""
     }
 }
