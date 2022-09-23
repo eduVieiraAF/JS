@@ -11,7 +11,7 @@ document.getElementById("calArea").onclick = function() {
 
     a = Number(a)
     b = Number(b)
-    c= Number(c)
+    c = Number(c)
 
     if (a != "" || b!= "" || c!= "") {
         s = (a + b +c) / 2 //* semi-perimeter
