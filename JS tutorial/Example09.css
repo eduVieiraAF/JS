@@ -1,0 +1,25 @@
+label {
+    display: block;
+    font-family: monospace;
+    font-size: 46px;
+    color:   #6814da;
+}
+
+button {
+    color: white;
+    background-color: #00b28e;
+    border: 1px solid #00b28e;
+    padding: 15px;
+    font-size: 20pt;
+    border-radius: 20px;
+}
+
+button:hover{
+    box-shadow: 0px 0px 4px #6814da, 0px 0px 4px #6814da, 0px 0px 4px #6814da , 0px 0px 12px #6814da;
+    border: 1px solid #6814da;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: #6814da;
+}
