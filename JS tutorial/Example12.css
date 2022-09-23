@@ -1,0 +1,9 @@
+html {
+    font-family: monospace;
+}
+
+#demo {
+    font-weight: bold;
+    color: darkcyan;
+    font-size: 20pt ;
+}
