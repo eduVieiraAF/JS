@@ -1,0 +1,37 @@
+h1 {
+    font-family: monospace;
+    width: 200px;
+    border: 2px dotted ;
+    text-align: center;
+    border-radius: 25px;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px;
+}
+
+#xLabel {
+    text-shadow: 
+        0px 0px 2px violet, 
+        0px 0px 3px violet, 
+        0px 0px 10px violet;
+}
+
+#yLabel {
+    text-shadow: 
+        0px 0px 2px yellowgreen, 
+        0px 0px 3px yellowgreen, 
+        0px 0px 10px yellowgreen;
+}
+
+#zLabel {
+    text-shadow: 
+        0px 0px 2px firebrick, 
+        0px 0px 3px firebrick, 
+        0px 0px 10px firebrick;
+}
+
+button {
+    padding: 8px;
+}
