@@ -47,6 +47,6 @@ let b = new String();    // A new String object
 let c = new Number();    // A new Number object
 let d = new Boolean();   // A new Boolean object
 
-const name = new String("Edu")
+const name1 = new String("Edu")
 
-console.log(name)
+console.log(name1)
