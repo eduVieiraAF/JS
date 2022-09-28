@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage and a bit of JSON</title>
+    <link rel="icon" type="image/x-icon" href="js.png">
+</head>
+<body>
+    <h2 style="font-family: monospace; color: steelblue;">Store and retrieve data + a bit of JSON</h2>
+    <p style="font-family: monospace; font-size: 14pt;" id="storeData"></p>
+
+    <script>
+        // Storing data
+        const myObj = {name: "Edu", age: "40", home: "Guarulhos"}
+        const myJSON = JSON.stringify(myObj)
+        localStorage.setItem("myData", myJSON)
+
+        // Fetching data
+        let text = localStorage.getItem("myData")
+        let obj = JSON.parse(text)
+        document.getElementById("storeData").innerHTML = `${obj.name}, ${obj.home}`
+        console.log(myJSON)
+        console.log(myObj)
+        console.log(myObj.age)
+    </script>
+</body>
+</html>
