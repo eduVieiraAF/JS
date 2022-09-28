@@ -1,3 +1,19 @@
+//* JSON Data
+// "firstName":"John"
+
+//* JSON Object
+// {"firstName":"John", "lastName":"Johnson"}
+
+//* JSON Array
+let textArr = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}'
+
+const jObj = JSON.parse(textArr)
+document.getElementById("jsonData").innerHTML = `${jObj.employees[1].lastName}, ${jObj.employees[1].firstName}`
+console.log(jObj)
+
 // Storing data
 const myObj = {name: "Edu", age: "40", home: "Guarulhos"}
 const myJSON = JSON.stringify(myObj)
