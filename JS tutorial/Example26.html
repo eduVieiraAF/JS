@@ -21,9 +21,9 @@
         let text = localStorage.getItem("myData")
         let obj = JSON.parse(text)
         document.getElementById("storeData").innerHTML = `${obj.name}, ${obj.home}`
-        console.log(myJSON)
-        console.log(myObj)
-        console.log(myObj.age)
+        console.log(text)
+        console.log(obj)
+        console.log(obj.age)
     </script>
 </body>
 </html>
