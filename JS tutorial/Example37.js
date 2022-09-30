@@ -10,7 +10,7 @@ function myDisplayer(some) {
 }
 
 let myPromise = new Promise(function(myResolve, myReject) {
-    let x = -15
+    let x = window.prompt("Enter a number")
 
     if (x >= 0) {
         myResolve("OK")
