@@ -13,9 +13,9 @@ let myPromise = new Promise(function(myResolve, myReject) {
     let x = window.prompt("Enter a number")
 
     if (x >= 0) {
-        myResolve("OK")
+        myResolve("Positive")
     } else {
-        myReject("Error")
+        myReject("Negative")
     }
 }) 
 
