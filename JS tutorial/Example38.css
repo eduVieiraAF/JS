@@ -1,0 +1,29 @@
+h1{
+    font-family: monospace;
+    width: 120px;
+    border: 3px dotted darkcyan;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    animation: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+p {
+    font-family: monospace;
+    text-shadow: 0px 0px 1px blue, 0px 0px 2px blue, 0px 0px 5px cyan;;
+    font-size: 28pt;
+    color: aliceblue;
+}
+
+#demo2 {
+    text-shadow: 0px 0px 1px brown, 0px 0px 3px brown, 0px 0px 10px tomato;
+    font-size: 16pt;
+}
+
+@keyframes anim {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(100px); opacity: 20%;}
+    0% {transform: translateX(0px);}
+}
