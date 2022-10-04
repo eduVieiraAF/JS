@@ -5,7 +5,7 @@ document.getElementById("submitButton").onclick = function() {
     let guess = document.getElementById("guessField").value
     guesses += 1
 
-    if (guess == 0 || guess > 10) {
+    if (guess == 0 || guess > 10 || isNaN(guess)) {
         alert("NOT A VALID NUMBER")
     } else {
         if (guess == answer) {
