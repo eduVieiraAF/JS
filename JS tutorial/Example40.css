@@ -1,0 +1,36 @@
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: fit-content;
+    border: 2px dashed seagreen;
+    padding: 4px;
+    border-radius: 15px;
+
+    animation: anim_title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim_title {
+    0% {opacity: 100%;}
+    25% {opacity: 60%;}
+    50% {opacity: 30%;}    
+    75% {opacity: 60%;}
+    100% {opacity: 100%;}
+}
+
+p {
+    font-family: monospace;
+    font-size: 16pt;
+    font-weight: bold
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#guessField {
+    border: 2px dotted seagreen;
+    border-radius: 25px;
+    width: 60px;
+    text-align: center;
+}
