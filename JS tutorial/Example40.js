@@ -5,11 +5,15 @@ document.getElementById("submitButton").onclick = function() {
     let guess = document.getElementById("guessField").value
     guesses += 1
 
-    if (guess == answer) {
-        alert(`${guess} IS CORRECT!!! It took you ${guesses} guesses.`)
-    } else if (guess < answer) {
-        alert(`${guess} is too small.`)
+    if (guess == 0 || guess > 10) {
+        alert("NOT A VALID NUMBER")
     } else {
-        alert(`${guess} is too large.`)
+        if (guess == answer) {
+            alert(`${guess} IS CORRECT!!! It took you ${guesses} guesses.`)
+        } else if (guess < answer) {
+            alert(`${guess} is too small.`)
+        } else {
+            alert(`${guess} is too large.`)
+        }
     }
 }
