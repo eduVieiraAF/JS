@@ -21,3 +21,18 @@ console.log(fruits)
 console.log(fruits.length)
 console.log(fruits.indexOf("banana"))
 console.log(fruits.indexOf("coconut")) // returns -1 (not found)
+
+//* standart for loop
+for (let i = 0; i < fruits.length; i += 1) {
+    console.log(fruits[i])
+}
+
+//* backwards for loop
+for (let j = fruits.length -1; j >= 0; j -=1 ) {
+    console.log(fruits[j])
+}
+
+//* for of
+for (let fruit of fruits) {
+    console.log(fruit)
+}
