@@ -1,0 +1,67 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 405px;
+    color: darkslategray;
+    border: 3px solid aquamarine;
+    box-shadow: 1px 1px 4px gray;
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+label {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#convert {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-shadow: 1px 1px 2px orangered;
+}
+
+#temperature {
+    font-family: monospace;
+    font-size: 28pt;
+
+    animation: dangle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#textBox {
+    width: 55px;
+    border:1px solid gray;
+    box-shadow: 1px 1px 2px aquamarine, 1px 1px 2px aquamarine;
+    text-align: center;
+    border-radius: 26px;
+}
+
+button {
+    border: 2px solid lightseagreen;
+    background-color: cornsilk;
+    padding: 6px;
+
+    color: orangered;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px gray;
+}
+
+button:hover {
+    background: lightseagreen;
+    color: cornsilk;
+}
+
+button:active {
+    background: seashell;
+    color: darkgrey;
+}
+
+@keyframes dangle {
+    0% {opacity: 100%;}
+    25% {opacity: 60%;}
+    50% {opacity: 30%;}    
+    75% {opacity: 60%;}
+    100% {opacity: 100%;}
+}
