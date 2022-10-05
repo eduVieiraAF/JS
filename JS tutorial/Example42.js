@@ -43,3 +43,19 @@ for (let fruit of fruits) {
     console.log(fruit)
 }
 
+//* 2D arrays
+let vegetables = ["carrots", "onions", "potatoes", "lettuce"]
+let meats = ["chicken", "beef", "pork", "lamb"]
+
+let food = [fruits.sort(), vegetables.sort(), meats.sort()]
+console.log(food)
+
+
+//* nested loops
+for (item of food) {
+    console.log(item)
+
+    for (subItem of item) {
+        console.log(subItem)
+    }
+}
