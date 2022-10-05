@@ -23,9 +23,8 @@ label {
 #temperature {
     font-family: monospace;
     font-size: 28pt;
-
     animation: dangle;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
@@ -59,9 +58,5 @@ button:active {
 }
 
 @keyframes dangle {
-    0% {opacity: 100%;}
-    25% {opacity: 60%;}
-    50% {opacity: 30%;}    
-    75% {opacity: 60%;}
-    100% {opacity: 100%;}
+    50% {opacity: 60%; color: maroon;}
 }
