@@ -1,4 +1,4 @@
-let fruits = ["apple", "banana", "lemon"]
+let fruits = ["apple", "banana", "lemon", "cherry", "avocado", "peach", "kiwi"]
 
 console.log(fruits)
 console.log(fruits[2])
@@ -22,6 +22,9 @@ console.log(fruits.length)
 console.log(fruits.indexOf("banana"))
 console.log(fruits.indexOf("coconut")) // returns -1 (not found)
 
+//* sorting an array
+fruits = fruits.sort()
+
 //* standart for loop
 for (let i = 0; i < fruits.length; i += 1) {
     console.log(fruits[i])
@@ -32,7 +35,11 @@ for (let j = fruits.length -1; j >= 0; j -=1 ) {
     console.log(fruits[j])
 }
 
+//* sorting an array from end to beginning
+fruits = fruits.sort().reverse()
+
 //* for of
 for (let fruit of fruits) {
     console.log(fruit)
 }
+
