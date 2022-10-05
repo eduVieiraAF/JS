@@ -7,6 +7,10 @@ h1 {
     text-align: center;
     border-radius: 20px;
     padding: 6px;
+
+    animation: dangle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 label {
@@ -24,7 +28,7 @@ label {
     font-family: monospace;
     font-size: 28pt;
     animation: dangle;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -58,5 +62,7 @@ button:active {
 }
 
 @keyframes dangle {
-    50% {opacity: 60%; color: maroon;}
+    50% {opacity: 60%; 
+        color: maroon; 
+    }
 }
