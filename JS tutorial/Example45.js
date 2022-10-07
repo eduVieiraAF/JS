@@ -12,7 +12,7 @@ let d = 4
 let e = 5
 
 
-console.log(sum(a, b))
+console.log(sum(a, b, c))
 
 /* could not accept more than 2 arguments this way
 function sum(a, b) {
