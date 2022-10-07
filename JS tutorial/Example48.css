@@ -1,0 +1,24 @@
+
+h1 {
+    font-family: monospace;
+    color: aquamarine;
+    background-color: black;
+    width: 180px;
+    text-align: center;
+    border: 5px solid aquamarine;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px gray;
+}
+
+button {
+    padding: 12px;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px gray;
+}
+
+label {
+    font-family: monospace;
+    font-size: 14pt;
+    color: cadetblue;
+    text-shadow: 1px 1px 3px gray;
+}
