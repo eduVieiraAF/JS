@@ -21,3 +21,9 @@ greet2 = value => console.log(`Hello, ${value}`)
 
 greet("Edu")
 greet2("Eduardo")
+
+//* more examples
+
+percent = (x, y) => x / y * 100
+
+console.log(`Approx ${Math.floor(percent(20, 300))}%`)
