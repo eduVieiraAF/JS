@@ -69,3 +69,26 @@ console.log(`Total due → USD $${total}`)
 function checkOut(total, element) {
     return total + element
 }
+
+//* Sorting an array of numbers
+
+let grades = [100, 60, 90, 80, 40, 75, 40]
+
+grades = grades.sort(ascendingOrder)
+grades.forEach(showOrder)
+
+grades = grades.sort(descendingOrder)
+grades.forEach(showOrder)
+
+
+function descendingOrder(x, y) {
+    return y - x
+}
+
+function ascendingOrder(x, y) {
+    return x - y
+}
+
+function showOrder(element) {
+    console.log(element)
+}
