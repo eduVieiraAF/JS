@@ -92,3 +92,27 @@ function ascendingOrder(x, y) {
 function showOrder(element) {
     console.log(element)
 }
+
+//* shuffling an array
+
+let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+console.log(cards)
+
+shuffle(cards)
+console.log(cards)
+console.log(`Top cards → ${cards[0]}`)
+
+function shuffle(array) {
+    let currentIndex = array.length
+
+    while (currentIndex != 0) {
+        let randomIndex = Math.floor(Math.random() * array.length)
+        currentIndex -= 1
+
+        let temp = array[currentIndex]
+        array[currentIndex] = array[randomIndex]
+        array[randomIndex] = temp
+    }
+
+    return array
+}
