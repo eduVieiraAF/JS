@@ -19,6 +19,7 @@ button {
 label {
     font-family: monospace;
     font-size: 14pt;
-    color: cadetblue;
-    text-shadow: 1px 1px 3px gray;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgb(26, 150, 109), 0px 0px 3px rgb(26, 150, 109);
 }
