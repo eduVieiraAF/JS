@@ -1,0 +1,27 @@
+html {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px gold, 1px -1px 3px darkorange, 3px -3px 4px red; 
+}
+
+p {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#display {
+    font-size: 16pt;
+}
+
+input {
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid gray;
+    padding-left: 2px;
+    padding: 4px;
+}
+
