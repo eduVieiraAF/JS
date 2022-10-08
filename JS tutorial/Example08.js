@@ -13,7 +13,7 @@ document.getElementById("calArea").onclick = function() {
     b = Number(b)
     c = Number(c)
 
-    if (a != "" || b!= "" || c!= "") {
+    if (a != "" || b != "" || c != "") {
         s = (a + b +c) / 2 //* semi-perimeter
         area = Math.sqrt(s * (s - a) * (s - b) * (s - c))
         console.log(`The area is ${area}`)
