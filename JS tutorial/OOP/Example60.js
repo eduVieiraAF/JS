@@ -23,10 +23,8 @@ for (let i = player1.name.length;  i > 0; i -= 1) {
 
 console.log(`Current score for ${player1.name} → ${player1.score}`)
 
-player1.pause()
-
 if (player1.score >= 4) {
-    player1.exit()
+    player1.pause()
 } else {console.log("try again")}
 
 const player2 = new Player()
@@ -42,7 +40,8 @@ console.log(`Current score for ${player2.name} → ${player2.score}`)
 
 if (player1.score > player2.score) {
     console.log(`${player1.name} wins!`)
+    player1.exit()
 } else {
     console.log(`${player2.name} wins!`)
-
+    player2.exit()
 }
