@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example02</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <h1>Change the names</h1>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        First name: <input type="text" ng-model="firstName"><br>
+        Last name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full name → {{firstName + " " + lastName}}
+    </div>
+
+    <script>
+        var app = angular.module('myApp', [])
+        app.controller('myCtrl', function($scope) {
+            $scope.firstName="Edu"
+            $scope.lastName="Vieira"
+        })
+    </script>
+</body>
+</html>
