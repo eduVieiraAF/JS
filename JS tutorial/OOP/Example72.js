@@ -8,6 +8,7 @@ let year = date.getFullYear()
 let day = date.getDate()
 let month = date.getMonth()
 let hours = date.getHours()
+let ampm = hours >= 12 ? "pm" : "am"
 
 date.setFullYear(2026)
 
@@ -15,6 +16,7 @@ date = date.toLocaleString()
 
 
 console.log(`Full date → ${date}\nDetailed date → ${day}/${month}/${year} | ${hours}`)
+console.log(ampm)
 document.getElementById("dateTime").innerHTML =  `Full date → ${date} <br> Detailed date → ${day}/${month}/${year}`
 
 
