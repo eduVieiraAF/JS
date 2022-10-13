@@ -10,6 +10,6 @@ try{
 } catch(err) {
     console.log(err)
 } finally {
-    // executes regards of conditions above
+    // executes regardless of conditions above
     console.log("This will always execute")
 }
