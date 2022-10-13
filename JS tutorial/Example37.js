@@ -56,3 +56,14 @@ promise.then(
  promise.then(value => console.log(value)).catch(error => console.log(error)) 
  */
 
+ //* Example #3
+ const newPormise = new Promise(resolve => {
+    setTimeout(resolve, 5000)
+ })
+
+ newPormise.then(() => console.log("you waited 5 seconds"))
+
+//* Example #4
+const wait = time => new Promise(resolve => {setTimeout(resolve, time)})
+
+wait(7000).then(() => console.log("You waited 7 seconds")) 
