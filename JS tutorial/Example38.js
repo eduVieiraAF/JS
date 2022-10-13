@@ -1,4 +1,5 @@
-//* The 'async' keyword makes a function return a promise
+//* The 'async' keyword makes a function return a Promise
+//* The 'await' keyword makes an async function wait for a Promise
 
 //* Example #1
 async function myDisplay() {

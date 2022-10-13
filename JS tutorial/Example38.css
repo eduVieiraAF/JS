@@ -18,7 +18,7 @@ p {
 }
 
 #demo2 {
-    text-shadow: 0px 0px 1px brown, 0px 0px 3px brown, 0px 0px 10px tomato;
+    text-shadow: 1px 1px 1px brown, 3px 3px 2px brown, 3px 3px 3px tomato;
     font-size: 16pt;
 }
 
