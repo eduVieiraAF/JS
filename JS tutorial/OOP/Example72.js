@@ -10,6 +10,8 @@ let month = date.getMonth()
 let hours = date.getHours()
 let ampm = hours >= 12 ? "pm" : "am"
 
+hours = (hours % 12) || 12 // convertion from military time
+
 date.setFullYear(2026)
 
 date = date.toLocaleString()
