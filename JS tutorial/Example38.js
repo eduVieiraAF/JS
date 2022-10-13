@@ -1,3 +1,6 @@
+//* The 'async' keyword makes a function return a promise
+
+//* Example #1
 async function myDisplay() {
     let myPromise = new Promise(function(resolve, reject) {
         setTimeout(function() {resolve("I love JavaScript")}, 3000)
@@ -8,6 +11,7 @@ async function myDisplay() {
 
 myDisplay()
 
+//* Example #2
 async function getFile() {
     let myPromise2 = new Promise(function(resolve) {
         let req = new XMLHttpRequest()
@@ -27,3 +31,24 @@ async function getFile() {
 }
 
 getFile()
+
+//* Example #3
+async function loadFile() {
+    let fileLoaded = false
+
+    if (fileLoaded) { return "File loaded" }
+    else { throw "File NOT found" }
+}
+
+loadFile().then(value => console.log(value)).catch(error => console.log(error))
+
+//* Example #4 - Alternative for example #3
+
+function loadFile2() {
+    let fileLoaded = true
+
+    if (fileLoaded) { return Promise.resolve("File2 loaded") }
+    else { return Promise.reject("File2 NOT found")}
+}
+
+loadFile2().then(value => console.log(value)).catch(error => console.log(error))
