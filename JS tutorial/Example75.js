@@ -58,14 +58,14 @@ function sum() {
 }
 
 const x = sum()
-
+console.log(x)
 console.log(x())
 console.log(x())
 console.log(x())
 console.log(x())
 console.log(x())
 
-console.log(a)
+console.log(`Updated value for a → ${a}`)
 a = a + 1
 console.log(a)
 
