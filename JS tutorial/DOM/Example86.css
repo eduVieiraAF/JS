@@ -1,0 +1,15 @@
+#myDiv{
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    position: relative;
+}
+
+#myDiv2 {
+    background-color: darkslategray;
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    position: relative;
+}
