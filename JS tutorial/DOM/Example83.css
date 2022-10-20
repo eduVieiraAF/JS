@@ -1,0 +1,13 @@
+#innerDiv {
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+    border: 1px solid
+}
+
+#outerDiv {
+    background-color: crimson;
+    width: 300px;
+    height: 300px;
+
+}
