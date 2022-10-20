@@ -80,11 +80,11 @@ function begin4() {
     timerId4 = setInterval(frame, 5);
 
     function frame(){
-        if (scaleX >= 2 || scaleY >= 2) {
+        if (scaleX <= 0.1 || scaleY <= 0.1) {
             clearInterval(timerId4);
         } else {
-           scaleX += 0.01;
-           scaleY += 0.01;
+           scaleX -= 0.01;
+           scaleY -= 0.01;
            myAnim.style.transform = "scale("+scaleX+", "+scaleY+")"
            myAnim2.style.transform = "scale("+scaleX+", "+scaleY+")"
         }
