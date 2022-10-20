@@ -1,7 +1,7 @@
 #myBox {
-    height: 200px;
-    width: 200px;
+    width: 35px;
+    padding: 15px;
     background-color: aquamarine;
-    border: 3px dotted plum;
+    border: 5px dotted violet;
     position: relative;
 }
