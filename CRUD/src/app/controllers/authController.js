@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken')
 const authConfig = require('../../config/auth')
 const User = require('../models/User');
 const router = express.Router();
+const crypto = require('crypto');
 
 function generateToken(params = {}) {
     return jwt.sign(params, authConfig.secret, { expiresIn:86400,}  )
@@ -45,6 +46,24 @@ router.post('/authenticate', async (req, res) => {
         user, 
         token: generateToken({ id: user.id }),
      });
+});
+
+router.post('forgot_password', async (req, res) => {
+    const { email } = req.body;
+
+    try {
+        const user = User.findOne({ email });
+
+        if (!user) return res.status(400).send({ error: 'user not found' });
+
+        const token = crypto.randomBytes(20).toString('hex');
+
+        const now = new Date();
+        now.setHours(now.getHours() + 1);
+
+    } catch(err) {
+        res.status(400).send({ error: 'Unknown error, try again' })
+    }
 });
 
 module.exports = app => app.use('/auth', router);
