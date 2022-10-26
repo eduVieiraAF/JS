@@ -68,6 +68,7 @@ router.post('forgot_password', async (req, res) => {
             }
         });
 
+        console.log(token, now)
     } catch(err) {
         res.status(400).send({ error: 'Unknown error, try again' })
     }
