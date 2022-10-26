@@ -5,7 +5,7 @@ const path = require('path');
 
 const transport = nodemailer.createTransport({
     host,
-    post,
+    port,
     auth: { user, pass }
   });
 
