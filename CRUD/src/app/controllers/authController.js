@@ -5,6 +5,7 @@ const authConfig = require('../../config/auth')
 const User = require('../models/User');
 const router = express.Router();
 const crypto = require('crypto');
+const mailer = request('../../mailer')
 
 function generateToken(params = {}) {
     return jwt.sign(params, authConfig.secret, { expiresIn:86400,}  )
