@@ -5,7 +5,7 @@ const authConfig = require('../../config/auth')
 const User = require('../models/User');
 const router = express.Router();
 const crypto = require('crypto');
-const mailer = request('../../mailer')
+const mailer = request('../../modules/mailer')
 
 function generateToken(params = {}) {
     return jwt.sign(params, authConfig.secret, { expiresIn:86400,}  )
@@ -49,13 +49,13 @@ router.post('/authenticate', async (req, res) => {
      });
 });
 
-router.post('forgot_password', async (req, res) => {
+router.post('/forgot_password', async (req, res) => {
     const { email } = req.body;
 
     try {
-        const user = User.findOne({ email });
+        const user = await User.findOne({ email });
 
-        if (!user) return res.status(400).send({ error: 'user not found' });
+        if (!await user) return res.status(400).send({ error: 'user not found' });
 
         const token = crypto.randomBytes(20).toString('hex');
 
@@ -69,9 +69,18 @@ router.post('forgot_password', async (req, res) => {
             }
         });
 
-        console.log(token, now)
+        mailer.sendEmail({
+            to: email,
+            from: 'eduardo.vieira@bizify.com.br',
+            template: 'auth/forgot_password',
+            context: { token },
+        }, (err) => {
+            if (err) return res.status(400).send({ error: 'Cannot reset password'  });
+
+            return res.send();
+        })
     } catch(err) {
-        res.status(400).send({ error: 'Unknown error, try again' })
+        res.status(400).send({ error: 'Unknown error, try again' });
     }
 });
 
