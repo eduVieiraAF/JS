@@ -5,7 +5,7 @@ const authConfig = require('../../config/auth')
 const User = require('../models/User');
 const router = express.Router();
 const crypto = require('crypto');
-const mailer = request('../../modules/mailer')
+const mailer = require('../../modules/mailer')
 
 function generateToken(params = {}) {
     return jwt.sign(params, authConfig.secret, { expiresIn:86400,}  )
@@ -69,17 +69,21 @@ router.post('/forgot_password', async (req, res) => {
             }
         });
 
-        mailer.sendEmail({
+        mailer.sendMail({
             to: email,
             from: 'eduardo.vieira@bizify.com.br',
             template: 'auth/forgot_password',
             context: { token },
         }, (err) => {
-            if (err) return res.status(400).send({ error: 'Cannot reset password'  });
-
+            if (err) {
+                console.log(err)
+                return res.status(400).send({ error: 'Cannot reset password'  });
+            }
+            
             return res.send();
         })
     } catch(err) {
+        console.log(err)
         res.status(400).send({ error: 'Unknown error, try again' });
     }
 });
