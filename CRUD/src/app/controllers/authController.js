@@ -55,7 +55,7 @@ router.post('/forgot_password', async (req, res) => {
     try {
         const user = await User.findOne({ email });
 
-        if (!await user) return res.status(400).send({ error: 'user not found' });
+        if (!user) return res.status(400).send({ error: 'user not found' });
 
         const token = crypto.randomBytes(20).toString('hex');
 
@@ -69,6 +69,7 @@ router.post('/forgot_password', async (req, res) => {
             }
         });
 
+        console.log(token, now)
         mailer.sendMail({
             to: email,
             from: 'eduardo.vieira@bizify.com.br',
