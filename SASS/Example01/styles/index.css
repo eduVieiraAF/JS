@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  background: rgb(138, 195, 209);
+}
+
+button {
+  background-color: rgb(7, 45, 56);
+  color: white;
+}
+
+button:active {
+  background: grey;
+  color: rgb(7, 45, 56);
+}
+
+.sample {
+  background: rgb(161, 139, 182);
+}/*# sourceMappingURL=index.css.map */
