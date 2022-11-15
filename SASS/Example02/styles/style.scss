@@ -1,0 +1,21 @@
+$primary_color: rgb(138, 195, 209); // $ creates a variable
+$secondary_color: rgb(7, 45, 56);
+$body_color: rgb(161, 139, 182);
+
+header {
+    display: flex;
+    background: $primary_color;
+    button {
+        background-color: $secondary_color;
+        color: white;
+
+        &:active {
+            background: grey;
+            color: $secondary_color;
+        }
+    }
+}
+
+.sample {
+    background: $body_color;
+}
