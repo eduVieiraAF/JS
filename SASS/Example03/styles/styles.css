@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  background: rgb(205, 219, 144);
+}
+header button {
+  background-color: rgb(173, 221, 235);
+  color: black;
+}
+header button:active {
+  background: grey;
+}
+
+.sample {
+  background: rgb(187, 212, 216);
+}/*# sourceMappingURL=styles.css.map */

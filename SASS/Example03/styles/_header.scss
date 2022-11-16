@@ -1,0 +1,14 @@
+
+
+header {
+    display: flex;
+    background: $primary_color;
+    button {
+        background-color: $secondary_color;
+        color: black;
+
+        &:active {
+            background: grey;
+        }
+    }
+}
