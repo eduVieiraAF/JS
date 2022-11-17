@@ -1,5 +1,9 @@
 header {
   display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: 10vh;
+  flex-direction: row;
   background: rgb(205, 219, 144);
 }
 header button {
@@ -11,5 +15,10 @@ header button:active {
 }
 
 .sample {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: 10vh;
+  flex-direction: column;
   background: rgb(187, 212, 216);
 }/*# sourceMappingURL=styles.css.map */
