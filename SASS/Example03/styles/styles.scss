@@ -3,5 +3,6 @@
 
 .sample {
     @include flexCenter(column);
+    @extend header;
     background: $body_color;
 }
